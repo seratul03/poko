@@ -6,7 +6,7 @@ from src.core.app import NekoApp
 from src.utils.logger import setup_logger, get_logger
 
 def main():
-    # Setup logger first
+
     setup_logger()
     logger = get_logger(__name__)
     logger.info(f"Starting {config.APP_NAME}...")
@@ -14,7 +14,7 @@ def main():
     app = QApplication(sys.argv)
     
     try:
-        # Create and run the main application logic
+        
         neko_app = NekoApp(app)
         neko_app.run()
         
